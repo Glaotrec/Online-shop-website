@@ -4,43 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Apple Garden - про нас</title>
+        <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
         <header>
-            <h1>Про нас</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Головна</a></li>
-                    <li><a href="catalog.html">Каталог товарів</a></li>
-                    <li><a href="cabinet.html">Особистий кабінет</a></li>
-                    <li><a href="information.html">Про нас</a></li>
-                    <li><a href="cart.html">Кошик</a></li>
-                </ul>
-            </nav>
+            <div class="header">
+                <a href="../index.html">
+                    <div class="logo">Apple Garden</div>
+                </a>
+        
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Пошук">
+                </div>
+        
+                
+                <div class="icons">
+                    <a href="../partials/information.html" class="info">
+                        <img class="info" src="../img/logo.png" alt="Info">
+                    </a>
+                    <a href="../partials/cabinet.html" class="cabinet">
+                        <img src="../img/cab.png" alt="Cabinet">
+                    </a>
+                    <a href="../partials/cart.html" class="cart">
+                        <img src="../img/cart.png" alt="Cart">
+                    </a>
+                </div>
+        
+                
+                <div class="menu">
+                    <button class="menu-toggle">☰</button>
+                    <div class="menu-items">
+                        <a href="../partials/information.html" class="info">
+                            <img src="../img/logo.png" alt="Info">
+                        </a>
+                        <a href="../partials/cabinet.html" class="cabinet">
+                            <img src="../img/cab.png" alt="Cabinet">
+                        </a>
+                        <a href="../partials/cart.html" class="cart">
+                            <img src="../img/cart.png" alt="Cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-            <hr>
-            <h3>Про нас</h3>
-            <p><br>Інформація</p>
-            <img src="https://img.freepik.com/premium-vector/photo-coming-soon_77760-116.jpg?w=996" alt="" width="400" height="400">
-            <hr>
-            <h3>Чому ми?</h3>
-            <p><br>Інформація</p>
-            <img src="https://img.freepik.com/premium-vector/photo-coming-soon_77760-116.jpg?w=996" alt="" width="400" height="400">
-            <hr>
-            <h3>Наші досягнення</h3>
-            <p><br>Інформація</p>
-            <img src="https://img.freepik.com/premium-vector/photo-coming-soon_77760-116.jpg?w=996" alt="" width="400" height="400">
-            <hr>
+        <main class="info-main">
+            <div class="info-container">
+                <div class="info-text">
+                    <h3>Про нас</h3>
+                    <p>Ми завжди раді надати консультацію, поділитися інформацією та допомогти з вибором, адже наша команда знає все про техніку Apple і навіть більше! 
+                        У "Apple Garden" ви знайдете найкращі ціни та найбільший асортимент товарів у наявності. <br><br>
+                        Наша мета – зробити ваш досвід використання улюблених гаджетів максимально комфортним і приємним. Ми постійно оновлюємо асортимент, слідкуємо за новинками та пропонуємо лише найкращі рішення для ваших потреб.
+                    </p>
+                </div>
+                <div class="info-image">
+                    <img src="../img/info1.jpg" alt="Store">
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-image">
+                    <img src="../img/info2.png" alt="Store">
+                </div>
+                <div class="info-text">
+                    <h3>Чому ми?</h3>
+                    <p>Ми пропонуємо найвигідніші ціни, щоб кожен міг насолоджуватися технікою Apple без зайвих витрат.<br><br>
+                        Швидка доставка в будь-яке місто України – ваше замовлення приїде до вас максимально швидко та зручно.<br><br>
+                        Гарантія та обслуговування – ми забезпечуємо підтримку на всіх етапах використання техніки.<br><br>
+                        В Apple Garden найширший вибір товарів у наявності: від новинок до аксесуарів, щоб задовольнити будь-які ваші потреби.
+                    </p>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-text">
+                    <h3>Наші досягнення</h3>
+                    <ul>
+                        <li>Офіційно співпрацюємо з Apple</li>
+                        <li>100 магазинів відкрито по всій Україні</li>                      
+                        <li>11000 тисяч постійних покупців</li>
+                        <li>95% відсотків задоволених відгуків від клієнтів</li>
+                        <li>5000 товарів доступно для покупки</li>
+                    </ul>
+                </div>
+                <div class="info-image">
+                    <img src="../img/info3.jpg" alt="Store">
+                </div>
+            </div>
         </main>
-        <footer>
-            <img src="https://www.mastercard.ua/content/dam/public/mastercardcom/eu/uk/images/consumers/icons/mc-logo-52.svg" alt="" width="50" height="50">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAfCAMAAACF8f6iAAAAdVBMVEX///8UNMsAJMkAKspca9YALMoAJskAD8cIL8oAIMgAHcioreYAFMextumiqOUAAMaMlN9GV9G+wuxLXNLv8Pp7hdxlctf6+/7Cxu3f4fbm6PiVnOLO0fHV1/PZ3PSco+RWZtU5TdCBit0tRM5vetkfOswnP839FUl8AAAB00lEQVQ4je1TW4KDIAwkIIKIj/q2rda27t7/iJsE63KE/dj5aIlJJiQThPjHn8KjbbcEkQfzjkY7ihZ/ZzS7R+uMf/YLO+chSbbikzlOQ6W1ria2EqnlIGajtSFWk1oAsL5kp1RayySqelUAqqZT5wH8IgoJ9iLEDS0rM6n8Ss4iQxJQ8X1rBbbli6dgn0L0ioi6CkBfiql4GY56UnXw1yjx7vADHdCRYRNvC1nDFexv0Oopjxy/GH1gmpAgPc2HxLD7GbQrJJVHTx+0XEJsGtI6XEAjDZXwfRdCsH27jebo6RQlhfTGTfmOLT3g10tKwzCPTwhyf2GFOHFxSCduR8KgQbIAiad5uI3OOHk30n39HGc6mrNlLQT9u9Db9E0SONyOxoHqBQklizgxwSI5qvcmWbG3ajwcJVJSWxcLab6uNJ0+TsQkOLQQTRYIAlBTlHamQaXOYVjkQ8xBJElnXAdibXhdSHa1U/qJ8zYMzevEGuGtqI/WfO2vXWHDZiFlrSHIs/8DO1F61swATw5DtCI+/xJlWF4RplPGiYWR0vHmL5WUuJzXKsPHoJWj6lkmTXh4c3WEfdCVeV6yQiueaEZdU+/JXtNzu5Lz2CA85uIffws/lusXjWNFJpAAAAAASUVORK5CYII=" alt="" width="80" height="50">
-            <p> Зв'язатися з нами: <br>
-                'Номер телефону' <br>
-                'Електронна пошта' <br>
-                © 2024 Apple Garden</p>
-            <a href="/privacy">Політика конфіденційності</a>
+        <footer class="footer">
+            <div class="container1">
+                <div class="footer_payments">
+                    <img src="img/visa-logo.png" alt="Visa">
+                    <img src="img/mc-logo-52.svg" alt="MasterCard">
+                </div>
+                <div class="email">
+                    <p>apple.garden@gmail.com</p>
+                </div>
+                <div class="number">
+                    <p>+38 (096) 000 00 00</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

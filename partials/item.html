@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Apple Garden - iPhone 16 Pro Max</title>
-    </head>
-    <body>
-        <header>
-            <h1>Apple Garden</h1>
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Garden - iPhone 16 Pro Max</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html">
+                <div class="logo">Apple Garden</div>
+            </a>
+    
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Пошук">
+            </div>
+    
+            
+            <div class="icons">
+                <a href="../partials/information.html" class="info">
+                    <img class="info" src="../img/logo.png" alt="Info">
+                </a>
+                <a href="../partials/cabinet.html" class="cabinet">
+                    <img src="../img/cab.png" alt="Cabinet">
+                </a>
+                <a href="../partials/cart.html" class="cart">
+                    <img src="../img/cart.png" alt="Cart">
+                </a>
+            </div>
+    
+            
+            <div class="menu">
+                <button class="menu-toggle">☰</button>
+                <div class="menu-items">
+                    <a href="../partials/information.html" class="info">
+                        <img src="../img/logo.png" alt="Info">
+                    </a>
+                    <a href="../partials/cabinet.html" class="cabinet">
+                        <img src="../img/cab.png" alt="Cabinet">
+                    </a>
+                    <a href="../partials/cart.html" class="cart">
+                        <img src="../img/cart.png" alt="Cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../img/item_img.jpg" alt="iPhone 16 Pro Max">
+            </div>
+            <div class="product-info">
+                <h2>iPhone 16 Pro Max</h2>
+                <p><strong>Виробник:</strong> Apple</p>
+                <p><strong>Вбудована пам'ять:</strong><br></p>
+                <div class="memory-options">
+                    <button class="memory-button">128GB</button>
+                    <button class="memory-button">256GB</button>
+                    <button class="memory-button">512GB</button>
+                </div>
+                <p class="price"> 69999 ₴</p>    
+                <button class="buy-button">Додати в кошик</button>
+                <h3>Опис</h3>
+                <p>iPhone 16 Pro Max забезпечує безпрецедентну потужність та продуктивність із оновленим процесором і революційною камерою.</p>
+                <h3>Характеристики</h3>
                 <ul>
-                    <li><a href="../index.html">Головна</a></li>
-                    <li><a href="catalog.html">Каталог товарів</a></li>
-                    <li><a href="cabinet.html">Особистий кабінет</a></li>
-                    <li><a href="information.html">Про нас</a></li>
-                    <li><a href="cart.html">Кошик</a></li>
+                    <li>Дисплей: 6.7" Super Retina XDR</li>
+                    <li>Процесор: A17 Bionic</li>
+                    <li>Камера: потрійна 48MP</li>
+                    <li>Акумулятор: 4685mAh</li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <hr>
-            <figure>
-                <img src="https://my-apple.com.ua/image/cache/webp/catalog/products/iphone/iphone-15-pro-15-pro-max/natural-titanium-1-700x700.webp" alt="">
-                <figcaption>iPhone 16 Pro Max 256GB Desert Titanium $1099</figcaption>
-            </figure>
-            <hr>
-            <input type="button" value="Купити">
-            <input type="button" value="Додати в кошик">
-            <hr>
-            <h2>Опис</h2>
-            <p>Опис товару</p>
-            <h2>Характеристики</h2>
-            <p>Інформація</p>
-            <h2>Відгуки</h2>
-            <p>Відгуки клієнтів</p>
-            <hr>
-        </main>
-        <footer>
-            <img src="https://www.mastercard.ua/content/dam/public/mastercardcom/eu/uk/images/consumers/icons/mc-logo-52.svg" alt="" width="50" height="50">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAfCAMAAACF8f6iAAAAdVBMVEX///8UNMsAJMkAKspca9YALMoAJskAD8cIL8oAIMgAHcioreYAFMextumiqOUAAMaMlN9GV9G+wuxLXNLv8Pp7hdxlctf6+/7Cxu3f4fbm6PiVnOLO0fHV1/PZ3PSco+RWZtU5TdCBit0tRM5vetkfOswnP839FUl8AAAB00lEQVQ4je1TW4KDIAwkIIKIj/q2rda27t7/iJsE63KE/dj5aIlJJiQThPjHn8KjbbcEkQfzjkY7ihZ/ZzS7R+uMf/YLO+chSbbikzlOQ6W1ria2EqnlIGajtSFWk1oAsL5kp1RayySqelUAqqZT5wH8IgoJ9iLEDS0rM6n8Ss4iQxJQ8X1rBbbli6dgn0L0ioi6CkBfiql4GY56UnXw1yjx7vADHdCRYRNvC1nDFexv0Oopjxy/GH1gmpAgPc2HxLD7GbQrJJVHTx+0XEJsGtI6XEAjDZXwfRdCsH27jebo6RQlhfTGTfmOLT3g10tKwzCPTwhyf2GFOHFxSCduR8KgQbIAiad5uI3OOHk30n39HGc6mrNlLQT9u9Db9E0SONyOxoHqBQklizgxwSI5qvcmWbG3ajwcJVJSWxcLab6uNJ0+TsQkOLQQTRYIAlBTlHamQaXOYVjkQ8xBJElnXAdibXhdSHa1U/qJ8zYMzevEGuGtqI/WfO2vXWHDZiFlrSHIs/8DO1F61swATw5DtCI+/xJlWF4RplPGiYWR0vHmL5WUuJzXKsPHoJWj6lkmTXh4c3WEfdCVeV6yQiueaEZdU+/JXtNzu5Lz2CA85uIffws/lusXjWNFJpAAAAAASUVORK5CYII=" alt="" width="80" height="50">
-            <p> Зв'язатися з нами: <br>
-            'Номер телефону' <br>
-            'Електронна пошта' <br>
-            © 2024 Apple Garden</p>
-            <a href="/privacy">Політика конфіденційності</a>
-        </footer>
-    </body>
+            </div>
+        </div>
+        <div class="company-container">
+            <div class="company-info">
+                <h3>Про компанію Apple</h3>
+                <p>Бренд Apple користується популярністю по всьому світу. Компанія відома своєю якісною технікою, підтримкою програмного забезпечення, захистом конфіденційних даних користувачів...</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container1">
+            <div class="footer_payments">
+                <img src="img/visa-logo.png" alt="Visa">
+                <img src="img/mc-logo-52.svg" alt="MasterCard">
+            </div>
+            <div class="email">
+                <p>apple.garden@gmail.com</p>
+            </div>
+            <div class="number">
+                <p>+38 (096) 000 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

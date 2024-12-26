@@ -4,80 +4,158 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Apple Garden</title>
+        <link rel="stylesheet" href="styles/main.css">
     </head>
+
     <body>
         <header>
-            <h1>Apple Garden</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="partials/catalog.html">Каталог товарів</a></li>
-                    <li><a href="partials/cabinet.html">Особистий кабінет</a></li>
-                    <li><a href="partials/information.html">Про нас</a></li>
-                    <li><a href="partials/cart.html">Кошик</a></li>
-                </ul>
-            </nav>
+            <div class="header">
+                <a href="">
+                    <div class="logo">Apple Garden</div>
+                </a>
+        
+                <div class="search">
+                    <input type="text" class="search-input" placeholder="Пошук">
+                </div>
+        
+                
+                <div class="icons">
+                    <a href="partials/information.html" class="info">
+                        <img class="info" src="img/logo.png" alt="Info">
+                    </a>
+                    <a href="partials/cabinet.html" class="cabinet">
+                        <img src="img/cab.png" alt="Cabinet">
+                    </a>
+                    <a href="partials/cart.html" class="cart">
+                        <img src="img/cart.png" alt="Cart">
+                    </a>
+                </div>
+        
+                
+                <div class="menu">
+                    <button class="menu-toggle">☰</button>
+                    <div class="menu-items">
+                        <a href="partials/information.html" class="info">
+                            <img src="img/logo.png" alt="Info">
+                        </a>
+                        <a href="partials/cabinet.html" class="cabinet">
+                            <img src="img/cab.png" alt="Cabinet">
+                        </a>
+                        <a href="partials/cart.html" class="cart">
+                            <img src="img/cart.png" alt="Cart">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-            <hr>
-            <h2>Категорії магазину</h2>
-            <div>
-                <table>
-                    <tr>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/iphone-16/c/images/overview/contrast/iphone_16_pro__fzqmc24ecpui_large_2x.jpg" alt="iPhone" width="116" height="154">
-                            <p>iPhone</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/ipad/home/cj/images/overview/select/product-tile/pt_ipad_air__cr381zljqdiu_large_2x.png" alt="iPad" width="134" height="154">
-                            <p>iPad</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/macbook-pro/ak/images/overview/contrast/product_tile_mba_13_15__cw1q3qd2yyeu_large_2x.png" alt="MacBook" width="220" height="110">
-                            <p>MacBook</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/apple-watch-series-10/a/images/overview/contrast/product_s10__d7ch2jhtbhme_large_2x.png" alt="Аксесуари" width="128" height="151">
-                            <p>Аксесуари</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <h2>Найкращі пропозиції</h2>
-            <div>
-                <table>
-                    <tr>
-                        <td style="text-align: center;">
-                            <h3>Акція 1</h3>
-                            <p>Товар, фото, сума знижки...</p>
-                        </td>
-                        <td><p>&emsp;&emsp;&emsp;</p></td>
-                        <td style="text-align: center;">
-                            <h3>Акція 2</h3>
-                            <p>Товар, фото, сума знижки...</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <h2><br>Блог</h2>
-            <h3>Новини компанії Apple</h3>
-            <p>Текст</p>
-            <img src="https://img.freepik.com/premium-vector/photo-coming-soon_77760-116.jpg?w=996" alt="" width="400" height="300">
-            <br>
-            <h3><br>Відгуки користувачів</h3>
-            <p>Текст</p>
-            <img src="https://img.freepik.com/premium-vector/photo-coming-soon_77760-116.jpg?w=996" alt="" width="400" height="300">
-            <p><br></p>
-            <hr>
+        
+        <main class="index-main">
+
+            <section class="header_banner">
+                    <img src="img/banner1.webp" alt="">  
+            </section>
+    
+            <section class="categories">
+                    <h2>Категорії магазину</h2>
+                    <div class="line">
+                        <a href="partials/catalog.html">
+                        <div class="product">
+                            <img src="img/product1.webp" alt="category 1">
+                                <p class="product-title">Iphone</p>
+                        </div>
+                        </a>
+                        <a href="partials/catalog.html">
+                        <div class="product">
+                            <img src="img/product2.webp" alt="category 2">
+                            <p class="product-title">MacBook</p>
+                        </div>
+                        </a>
+                        <a href="partials/catalog.html">
+                        <div class="product">
+                            <img src="img/product3.webp" alt="category 3">
+                                <p class="product-title">AirPods</p>
+                        </div>
+                        </a>
+                    </div>
+            </section>
+    
+            <section class="catalog">
+                    <h2>Каталог товарів</h2>
+                    <div class="products">
+                        <a href="partials/item.html">
+                        <div class="product">
+                            <img src="img/product4.webp" alt="IPHONE 16 Pro">
+                            <p>IPHONE 16 Pro</p>
+                            <p class="price">66 572 ₴</p>
+                        </div>
+                        </a>
+                        <a href="partials/item.html">
+                        <div class="product">
+                            <img src="img/photo_2024-12-26_00-03-05.jpg" alt="AirPods 4">
+                            <p>AirPods 4</p>
+                            <p class="price">8 772 ₴</p>
+                        </div>
+                        </a>
+                        <a href="partials/item.html">
+                        <div class="product">
+                            <img src="img/photo_2024-12-26_00-03-37.jpg" alt="APPLE WATCH SERIES 6">
+                            <p>APPLE WATCH SERIES 6</p>
+                            <p class="price">11 172 ₴</p>
+                        </div>
+                        </a>
+                        <a href="partials/item.html">
+                        <div class="product">
+                            <img src="img/product2.webp" alt="MacBook Pro M2">
+                            <p>MacBook Pro M2</p>
+                            <p class="price">61 172 ₴</p>
+                        </div>
+                        </a>
+                    </div>
+            </section>
+    
+            <section class="blog">
+                <div class="container">
+                    <h2>Блог</h2>
+                    <div class="blog__posts">
+                        <a href="">
+                        <div class="post">
+                            <img src="img/blog1.webp" alt="Сучасна камера">
+                            <h3>Сучасна камера</h3>
+                            <p>Робіть неймовірні фото з якісною камерою на 12 МП.</p>
+                        </div>
+                        </a>
+                        <a href="">
+                        <div class="post">
+                            <img src="img/blog2.png" alt="Сервіс онлайн музики">
+                            <h3>Сервіс онлайн музики</h3>
+                            <p>Слухайте музику де завгодно з високою доставкою.</p>
+                        </div>
+                        </a>
+                        <a href="">
+                        <div class="post">
+                            <img src="img/blog3.jpg" alt="Слідкуйте за вашим здоров'ям">
+                            <h3>Слідкуйте за вашим здоров'ям</h3>
+                            <p>На тренуванні, роботі, вдома - контроль вашого здоров'я.</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
-            <img src="https://www.mastercard.ua/content/dam/public/mastercardcom/eu/uk/images/consumers/icons/mc-logo-52.svg" alt="" width="50" height="50">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAfCAMAAACF8f6iAAAAdVBMVEX///8UNMsAJMkAKspca9YALMoAJskAD8cIL8oAIMgAHcioreYAFMextumiqOUAAMaMlN9GV9G+wuxLXNLv8Pp7hdxlctf6+/7Cxu3f4fbm6PiVnOLO0fHV1/PZ3PSco+RWZtU5TdCBit0tRM5vetkfOswnP839FUl8AAAB00lEQVQ4je1TW4KDIAwkIIKIj/q2rda27t7/iJsE63KE/dj5aIlJJiQThPjHn8KjbbcEkQfzjkY7ihZ/ZzS7R+uMf/YLO+chSbbikzlOQ6W1ria2EqnlIGajtSFWk1oAsL5kp1RayySqelUAqqZT5wH8IgoJ9iLEDS0rM6n8Ss4iQxJQ8X1rBbbli6dgn0L0ioi6CkBfiql4GY56UnXw1yjx7vADHdCRYRNvC1nDFexv0Oopjxy/GH1gmpAgPc2HxLD7GbQrJJVHTx+0XEJsGtI6XEAjDZXwfRdCsH27jebo6RQlhfTGTfmOLT3g10tKwzCPTwhyf2GFOHFxSCduR8KgQbIAiad5uI3OOHk30n39HGc6mrNlLQT9u9Db9E0SONyOxoHqBQklizgxwSI5qvcmWbG3ajwcJVJSWxcLab6uNJ0+TsQkOLQQTRYIAlBTlHamQaXOYVjkQ8xBJElnXAdibXhdSHa1U/qJ8zYMzevEGuGtqI/WfO2vXWHDZiFlrSHIs/8DO1F61swATw5DtCI+/xJlWF4RplPGiYWR0vHmL5WUuJzXKsPHoJWj6lkmTXh4c3WEfdCVeV6yQiueaEZdU+/JXtNzu5Lz2CA85uIffws/lusXjWNFJpAAAAAASUVORK5CYII=" alt="" width="80" height="50">
-            <p> Зв'язатися з нами: <br>
-                'Номер телефону' <br>
-                'Електронна пошта' <br>
-                © 2024 Apple Garden</p>
-            <a href="/privacy">Політика конфіденційності</a>
+
+        <footer class="footer">
+            <div class="container1">
+                <div class="footer_payments">
+                    <img src="img/visa-logo.png" alt="Visa">
+                    <img src="img/mc-logo-52.svg" alt="MasterCard">
+                </div>
+                <div class="email">
+                    <p>apple.garden@gmail.com</p>
+                </div>
+                <div class="number">
+                    <p>+38 (096) 000 00 00</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

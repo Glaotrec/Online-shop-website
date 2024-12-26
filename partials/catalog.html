@@ -1,89 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Apple Garden - каталог товарів</title>
-    </head>
-    <body>
-        <header>
-           <h1>Каталог товарів</h1>
-           <nav>
-                <ul>
-                    <li><a href="../index.html">Головна</a></li>
-                    <li><a href="catalog.html">Каталог товарів</a></li>
-                    <li><a href="cabinet.html">Особистий кабінет</a></li>
-                    <li><a href="information.html">Про нас</a></li>
-                    <li><a href="cart.html">Кошик</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <hr>
-            <form>
-                <div>
-                    Пошук:
-                    <input type="text">
-                </div>
-            </form>
-            <input type="button" value="Прийняти">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Garden - кращий інтернет магазин</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body class="catalog-body">
+    <header>
+        <div class="header">
+            <a href="../index.html">
+                <div class="logo">Apple Garden</div>
+            </a>
+    
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Пошук">
+            </div>
+    
             
-            <h3>Фільтри</h3>
-            <div>
-                <select name="Тип товару">
-                    <option value="телефони">телефони</option>
-                    <option value="ноутбуки">ноутбуки</option>
-                    <option value="навушники">навушники</option>
-                </select>
+            <div class="icons">
+                <a href="../partials/information.html" class="info">
+                    <img class="info" src="../img/logo.png" alt="Info">
+                </a>
+                <a href="../partials/cabinet.html" class="cabinet">
+                    <img src="../img/cab.png" alt="Cabinet">
+                </a>
+                <a href="../partials/cart.html" class="cart">
+                    <img src="../img/cart.png" alt="Cart">
+                </a>
             </div>
-            <br>
-            <div>
-                <table>
-                    <tr>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/iphone-16/c/images/overview/contrast/iphone_16__flbknhdndb22_large_2x.jpg" alt="iPhone" width="116" height="154">
-                            <p>iPhone 16 $799</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://www.apple.com/v/iphone-16/c/images/overview/contrast/iphone_16_pro__fzqmc24ecpui_large_2x.jpg" alt="iPhone 16 Pro" width="116" height="154">
-                            <p>iPhone 16 Pro $999</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://content1.rozetka.com.ua/goods/images/big/364623744.jpg" alt="iPhone 15" width="116" height="154">
-                            <p>iPhone 15 $699</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://content1.rozetka.com.ua/goods/images/big/364827001.jpg" alt="iPhone 15 Pro" width="116" height="154">
-                            <p>iPhone 15 Pro $899</p>
-                        </td>
-                        <td style="text-align: center;">
-                            <img src="https://content2.rozetka.com.ua/goods/images/big/364834252.jpg" alt="iPhone 15 Pro Max" width="116" height="154">
-                            <p>iPhone 15 Pro Max $1099</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <p>...</p>
-                            <p></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">
-                            <p>...</p>
-                            <p></p>
-                        </td>
-                    </tr>
-                </table>
+    
+            
+            <div class="menu">
+                <button class="menu-toggle">☰</button>
+                <div class="menu-items">
+                    <a href="../partials/information.html" class="info">
+                        <img src="../img/logo.png" alt="Info">
+                    </a>
+                    <a href="../partials/cabinet.html" class="cabinet">
+                        <img src="../img/cab.png" alt="Cabinet">
+                    </a>
+                    <a href="../partials/cart.html" class="cart">
+                        <img src="../img/cart.png" alt="Cart">
+                    </a>
+                </div>
             </div>
-        </main>
-        <footer>
-            <img src="https://www.mastercard.ua/content/dam/public/mastercardcom/eu/uk/images/consumers/icons/mc-logo-52.svg" alt="" width="50" height="50">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAfCAMAAACF8f6iAAAAdVBMVEX///8UNMsAJMkAKspca9YALMoAJskAD8cIL8oAIMgAHcioreYAFMextumiqOUAAMaMlN9GV9G+wuxLXNLv8Pp7hdxlctf6+/7Cxu3f4fbm6PiVnOLO0fHV1/PZ3PSco+RWZtU5TdCBit0tRM5vetkfOswnP839FUl8AAAB00lEQVQ4je1TW4KDIAwkIIKIj/q2rda27t7/iJsE63KE/dj5aIlJJiQThPjHn8KjbbcEkQfzjkY7ihZ/ZzS7R+uMf/YLO+chSbbikzlOQ6W1ria2EqnlIGajtSFWk1oAsL5kp1RayySqelUAqqZT5wH8IgoJ9iLEDS0rM6n8Ss4iQxJQ8X1rBbbli6dgn0L0ioi6CkBfiql4GY56UnXw1yjx7vADHdCRYRNvC1nDFexv0Oopjxy/GH1gmpAgPc2HxLD7GbQrJJVHTx+0XEJsGtI6XEAjDZXwfRdCsH27jebo6RQlhfTGTfmOLT3g10tKwzCPTwhyf2GFOHFxSCduR8KgQbIAiad5uI3OOHk30n39HGc6mrNlLQT9u9Db9E0SONyOxoHqBQklizgxwSI5qvcmWbG3ajwcJVJSWxcLab6uNJ0+TsQkOLQQTRYIAlBTlHamQaXOYVjkQ8xBJElnXAdibXhdSHa1U/qJ8zYMzevEGuGtqI/WfO2vXWHDZiFlrSHIs/8DO1F61swATw5DtCI+/xJlWF4RplPGiYWR0vHmL5WUuJzXKsPHoJWj6lkmTXh4c3WEfdCVeV6yQiueaEZdU+/JXtNzu5Lz2CA85uIffws/lusXjWNFJpAAAAAASUVORK5CYII=" alt="" width="80" height="50">
-            <p> Зв'язатися з нами: <br>
-                'Номер телефону' <br>
-                'Електронна пошта' <br>
-                © 2024 Apple Garden</p>
-            <a href="/privacy">Політика конфіденційності</a>
-        </footer>
-    </body>
+        </div>
+    </header>
+
+    <main class="catalogmain">
+
+
+        <div class="catalogpage">
+            <section class="filters">
+
+                <h1>Фільтри</h1>
+
+                <div class="border"></div>
+
+                <ul class="filter-list">
+                    <li>
+                        <label>
+                            <input class="input1" type="checkbox" name="category" value="Iphone">
+                            Iphone
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="input1" type="checkbox" name="category" value="Airpods">
+                            Airpods
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="input1" type="checkbox" name="category" value="MacBooks">
+                            MacBooks
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="input1" type="checkbox" name="category" value="Others">
+                            Others
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="border"></div>
+
+                <div class="slider-container">
+                    <label for="priceRange">Виберіть ціну:</label>
+                    <input type="range" id="priceRange" min="0" max="1000" step="10" value="500">
+                    <div class="value-display">
+                        Поточна ціна: <span id="priceValue">500</span> грн
+                    </div>
+                </div>
+
+                <div class="border"></div>
+
+                <ul class="filter-list1">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="IphoneType">
+                            Iphone 14
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="IphoneType1">
+                            Iphone 15
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="IphoneType2">
+                            Iphone 16
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="category" value="IphoneType3">
+                            Iphone 11
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="border"></div>
+
+                <button class="apply-filters">Застосувати</button>
+            </section>
+
+            <section class="catalog1">
+                <h1>Каталог товарів</h1>
+                <div class="border"></div>
+                    <div class="line">
+                        <div class="product">
+                            <img src="../img/product4.webp" alt="Product 1">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 14</div>
+                                <div class="product-price">49999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                            </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../img/catalog_product_img.webp" alt="Product 2">
+                            <div class="catalog-product-info">
+                                <div class="product-title">Iphone 15</div>
+                                <div class="product-price">59999 ₴</div>
+                                <a href="../partials/item.html" class="buy-button">Купити</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+</main>
+
+
+
+
+<footer class="footer">
+    <div class="container1">
+        <div class="footer_payments">
+            <img src="img/visa-logo.png" alt="Visa">
+            <img src="img/mc-logo-52.svg" alt="MasterCard">
+        </div>
+        <div class="email">
+            <p>apple.garden@gmail.com</p>
+        </div>
+        <div class="number">
+            <p>+38 (096) 000 00 00</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
 </html>
